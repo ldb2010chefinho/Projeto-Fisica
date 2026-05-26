@@ -4,7 +4,7 @@ Aplicação web para calcular e visualizar movimentos físicos (**MRU** e **MRUV
 
 ---
 
-## 📋 Funcionalidades
+## Funcionalidades
 
 - Seleção do tipo de movimento via menu dropdown
 - Exibição dinâmica apenas dos campos necessários para cada equação
@@ -13,7 +13,7 @@ Aplicação web para calcular e visualizar movimentos físicos (**MRU** e **MRUV
 
 ---
 
-## 🔢 Tipos de Movimento Suportados
+## Tipos de Movimento Suportados
 
 | Opção | Tipo | Equação | Campos necessários |
 |-------|------|---------|-------------------|
@@ -26,7 +26,7 @@ Aplicação web para calcular e visualizar movimentos físicos (**MRU** e **MRUV
 
 ---
 
-## 🗂️ Estrutura de Arquivos
+## Estrutura de Arquivos
 
 ```
 projeto/
@@ -37,7 +37,7 @@ projeto/
 
 ---
 
-## 🚀 Como Usar
+## Como Usar
 
 1. Abra o arquivo `index.html` em qualquer navegador moderno (sem necessidade de servidor).
 2. Selecione o tipo de movimento no menu dropdown.
@@ -46,7 +46,7 @@ projeto/
 
 ---
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **HTML5** — estrutura da página
 - **CSS3** — estilização
@@ -55,7 +55,7 @@ projeto/
 
 ---
 
-## ⚠️ Limitações Conhecidas
+## Limitações Conhecidas
 
 - O cálculo do **MRUV3** ainda não foi implementado.
 - Não há validação dos campos — valores em branco ou inválidos podem gerar resultados incorretos no gráfico.
@@ -63,7 +63,7 @@ projeto/
 
 ---
 
-## 💡 Melhorias Futuras Sugeridas
+## Melhorias Futuras Sugeridas
 
 - Implementar a equação de Torricelli (MRUV3)
 - Adicionar validação e mensagens de erro nos campos
