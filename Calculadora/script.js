@@ -171,6 +171,10 @@ btn_enviar.addEventListener("click", function () {
 
             }
         } else if (tipo.value === "mruv3") {
-            //FAzer
+            // Fórmula: Δs = v0 * t + (a * t²) / 2
+            for (let i = 0; i <= t; i++) {
+                tempos.push(i);
+                espacos.push(v0 * i + (a * (i * i)) / 2);
+            }
         }
     })
