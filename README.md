@@ -70,3 +70,7 @@ projeto/
 - Exibir o resultado numérico calculado junto ao gráfico
 - Permitir limpar/resetar o formulário e o gráfico
 - Adicionar unidades de medida (m, m/s, m/s²) nos labels
+
+---
+## Visite o Site
+- https://ldb2010chefinho.github.io/Projeto-Fisica/
