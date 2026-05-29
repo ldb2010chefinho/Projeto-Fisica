@@ -102,7 +102,7 @@ btn_enviar.addEventListener("click", function () {
     } else if (tipo.value === "mruv") {
         // s = s0 + v0*t + a*t²/2  →  resolve t via bhaskara
         let discriminante = v0 * v0 + 2 * a * (s - s0);
-        let t_total = (-v0 + Math.sqrt(discriminante)) / a;
+        let t_total = Math.max((-v0 + Math.sqrt(discriminante)) / a, (-v0 - Math.sqrt(discriminante)) / a);
         for (let i = 0; i <= t_total; i++) {
             tempos.push(i);
             posicoes.push(s0 + v0 * i + (a * i * i) / 2);
