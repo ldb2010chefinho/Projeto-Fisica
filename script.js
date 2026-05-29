@@ -1,3 +1,4 @@
+//Autoral
 const espaco = document.getElementById("espaco");
 const espaco_inicial = document.getElementById("espaco_inicial");
 const velocidade_inicial = document.getElementById("velocidade_inicial");
@@ -51,7 +52,7 @@ function criarGrafico(idCanvas, label, tempos, dados, corBorda) {
     }
 
     const ctx = document.getElementById(idCanvas).getContext("2d");
-
+    //A parte do datasets foi gerada por IA
     graficos[idCanvas] = new Chart(ctx, {
         type: "line",
         data: {
