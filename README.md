@@ -12,9 +12,6 @@ Aplicação web para calcular e visualizar movimentos físicos (**MRU** e **MRUV
 ---
 
 ## Estrutura de Arquivos
-
-
-## Estrutura de Arquivos
 ```
 projeto/
 ├── index.html
