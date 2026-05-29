@@ -96,9 +96,11 @@ btn_enviar.addEventListener("click", function () {
             tempos.push(i);
             posicoes.push(s0 + v * i);
             velocidades.push(v);
+            aceleracoes.push(0);
         }
         criarGrafico("grafico_posicao",    "Posição (m)",      tempos, posicoes,    "blue");
         criarGrafico("grafico_velocidade", "Velocidade (m/s)", tempos, velocidades, "green");
+        criarGrafico("grafico_aceleracao", "Aceleração (m/s²)", tempos, aceleracoes, "red");
 
     } else if (tipo.value === "mruv") {
         // s = s0 + v0*t + a*t²/2  →  resolve t via bhaskara
