@@ -12,11 +12,9 @@ Plotagem de gráficos de Posição, Velocidade e Aceleração × Tempo
 
 ## Estrutura de Arquivos
 projeto/
-├── index.html
-|
-├── script.js
-|
-└── style.css
+├── index.html   # Estrutura da página e importações (Chart.js, CSS, JS)
+├── script.js    # Lógica de cálculo, manipulação do DOM e geração dos gráficos
+└── style.css    # Estilização do layout e componentes
 
 ---
 
