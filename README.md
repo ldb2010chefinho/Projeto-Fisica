@@ -13,7 +13,9 @@ Plotagem de gráficos de Posição, Velocidade e Aceleração × Tempo
 ## Estrutura de Arquivos
 projeto/
 ├── index.html
+|
 ├── script.js
+|
 └── style.css
 
 ---
