@@ -1,75 +1,49 @@
 # 📐 Calculadora de Movimento
+Aplicação web para calcular e visualizar movimentos físicos (MRU e MRUV) com gráficos interativos gerados em tempo real.
 
-Aplicação web para calcular e visualizar movimentos físicos (**MRU** e **MRUV**).
+Funcionalidades
 
----
+Seleção do tipo de movimento via menu dropdown
+Exibição dinâmica apenas dos campos necessários para cada equação
+Cálculo automático do tempo total a partir dos parâmetros fornecidos
+Plotagem de gráficos de Posição, Velocidade e Aceleração × Tempo
 
-## Funcionalidades
 
-- Seleção do tipo de movimento via menu dropdown
-- Exibição dinâmica apenas dos campos necessários para cada equação
-- Cálculo das posições/velocidades ao longo do tempo
-- Plotagem de gráfico com os resultados
-
----
-
-## Tipos de Movimento Suportados
-
-| Opção | Tipo | Equação | Campos necessários |
-|-------|------|---------|-------------------|
-| MRU | Movimento Retilíneo Uniforme | `s = s₀ + v · t` | Espaço Inicial, Velocidade, Tempo |
-| MRUV1 | MRUV — 1ª Equação | `v = v₀ + a · t` | Velocidade Inicial, Velocidade, Aceleração, Tempo |
-| MRUV2 | MRUV — 2ª Equação | `s = s₀ + v₀·t + (a·t²)/2` | Espaço, Espaço Inicial, Velocidade Inicial, Aceleração, Tempo |
-| MRUV3 | MRUV — 3ª Equação (Torricelli) | `v² = v₀² + 2·a·ΔS` | Velocidade Inicial, Velocidade, Aceleração, Variação do Espaço |
-
-> **Observação:** o MRUV3 (Equação de Torricelli) ainda está em desenvolvimento.
-
----
-
-## Estrutura de Arquivos
-
-```
+Estrutura de Arquivos
 projeto/
 ├── index.html
 ├── script.js
 └── style.css
-```
 
----
+Como Usar
 
-## Como Usar
+Abra o arquivo index.html em qualquer navegador moderno (sem necessidade de servidor).
+Selecione o tipo de movimento no menu dropdown.
+Preencha os campos que aparecerem.
+Clique em Enviar para calcular e visualizar os gráficos.
 
-1. Abra o arquivo `index.html` em qualquer navegador moderno (sem necessidade de servidor).
-2. Selecione o tipo de movimento no menu dropdown.
-3. Preencha os campos que aparecerem.
-4. Clique em **Enviar** para calcular e visualizar o gráfico.
 
----
+Parâmetros por Tipo de Movimento
+MRU — Movimento Retilíneo Uniforme
 
-## Tecnologias
+Velocidade constante, sem aceleração.
 
-- **HTML5** — estrutura da página
-- **CSS3** — estilização
-- **JavaScript (ES6)** — lógica e manipulação do DOM
-- **[Chart.js](https://www.chartjs.org/)** — renderização dos gráficos (via CDN)
+CampoDescriçãoEspaço (s)Posição final (m)Espaço Inicial (s₀)Posição inicial (m)Velocidade (v)Velocidade constante (m/s)
+Fórmula: s = s₀ + v · t
 
----
+MRUV — Movimento Retilíneo Uniformemente Variado
 
-## Limitações Conhecidas
+Aceleração constante, velocidade variável.
 
-- O cálculo do **MRUV3** ainda não foi implementado.
-- Não há validação dos campos — valores em branco ou inválidos podem gerar resultados incorretos no gráfico.
-- O gráfico não é recriado entre cálculos consecutivos; múltiplos cliques em "Enviar" podem sobrepor dados.
+CampoDescriçãoEspaço (s)Posição final (m)Espaço Inicial (s₀)Posição inicial (m)Velocidade Inicial (v₀)Velocidade no instante t = 0 (m/s)Aceleração (a)Aceleração constante (m/s²)
+Fórmulas: s = s₀ + v₀·t + (a·t²)/2 | v = v₀ + a·t
 
----
+Tecnologias
 
-## Melhorias Futuras Sugeridas
-
-- Implementar a equação de Torricelli (MRUV3)
-- Adicionar validação e mensagens de erro nos campos
-- Exibir o resultado numérico calculado junto ao gráfico
-- Permitir limpar/resetar o formulário e o gráfico
-- Adicionar unidades de medida (m, m/s, m/s²) nos labels
+HTML5 — estrutura da página
+CSS3 — estilização
+JavaScript (ES6) — lógica e manipulação do DOM
+Chart.js — renderização dos gráficos (via CDN)
 
 ---
 ## Visite o Site
